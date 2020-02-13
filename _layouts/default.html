@@ -1,4 +1,14 @@
 {% include top.html %}
+		<div id="project-overview-10" class="project-overview">
+			<div class="project-images">
+        {% for image in page.images %}
+          <div class="{% if forloop.first or forloop.last %}primary{% endif %} media">
+            <img src="media/{{ image }}">
+          </div>
+        {% endfor %}
+      </div>
+			<div class="information">
+				<div class="project-info">
 {{ content }}
                                </div>
 
