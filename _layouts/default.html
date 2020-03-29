@@ -3,7 +3,7 @@
 			<div class="project-images">
         {% for image in page.images %}
           <div class="{% if forloop.first or forloop.last %}primary{% endif %} media">
-            <img src="media/{{ image }}">
+            <img src="/media/{{ image }}">
           </div>
         {% endfor %}
       </div>
@@ -12,7 +12,7 @@
 {{ content }}
                                </div>
 
-                               <a href="."><div class="nav-back">
+                               <a href="/"><div class="nav-back">
                                        <p>Back to Projects</p>
                                </div></a>
                        </div>
